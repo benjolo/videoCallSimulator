@@ -195,10 +195,15 @@ const Home = () => {
 		<>
 		<Router>
 			<Stack spacing={3} id="content">
-				<Grid item xs={12} sx={{display: "flex", justifyContent: "space-between", color: "white", alignItems: "center"}}>
+      {device !== "mobile" ?
+        <Grid item xs={12} sx={{display: "flex", justifyContent: "space-between", color: "white", alignItems: "center"}}>
 					<Logo/>
 					<h3>VideoCall-Simulator</h3>
 				</Grid>
+        :
+        <Grid item xs={12} sx={{display: "flex", justifyContent: "space-around", color: "white", alignItems: "center"}}>
+					<h3>VideoCall-Simulator</h3>
+				</Grid>}
 				{device === "mobile" ? 				
 				<Grid id="app" sx={{ padding: "2%", marginTop: "0 !important"}}>
 					<Route path={`${locPath}`} exact component={() => <SetCall setVideoOn={setVideoOn} setAudioOn={setAudioOn} json={json} device={device}  yourName={yourName}/>}/>

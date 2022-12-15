@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title": "Intro",
-      "society": "bo",
+      "society": "society",
       "job": "Head of society",
       "name": "name of the speaker",
       "path": "./media/video/Intro.mp4",

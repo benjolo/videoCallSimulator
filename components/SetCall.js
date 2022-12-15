@@ -171,7 +171,7 @@ const SetCall = (props) => {
                     </MenuItem>
                 </Menu>
             </Grid>
-            <Grid sx={{minHeight: "8vh"}}><CustomTypo text={"Join the call with " + json[0].name + ", " + json[0].job + " at " + json[0].society}></CustomTypo></Grid>
+            <Grid sx={{minHeight: "8vh"}}><CustomTypo text={"Join the call with " + json[0]?.name + ", " + json[0]?.job + " at " + json[0]?.society}></CustomTypo></Grid>
         </Grid>
         <Grid item style={{paddingTop: 0, textAlign: "center", display: "flex", justifyContent: "center"}}>
             <Grid sx={{position: "relative"}}>
