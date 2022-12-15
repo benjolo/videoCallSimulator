@@ -1,0 +1,12 @@
+{
+  "name": "standalone-react",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "author": "",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
